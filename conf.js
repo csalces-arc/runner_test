@@ -6,15 +6,7 @@ exports.config = {
     specs: [
 		'./test.js',
     ],    
-    onPrepare: function() {
-        
-        var AllureReporter = require('jasmine-allure-reporter');
-		jasmine.getEnv().addReporter(new AllureReporter({
-			allureReport: {
-				resultDir: 'allure-results'
-			}
-		}))
-
+    onPrepare: function() {       
     },
     afterLaunch: function() {
     },
